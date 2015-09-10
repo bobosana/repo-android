@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+ <TextView
+        android:id="@+id/rowTvId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:visibility="invisible" />
+    
+    <TextView
+        android:id="@+id/rowTvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="24dp"
+        android:text="12th Feb 2015"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/rowTvCommodity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/rowTvDate"
+        android:layout_below="@+id/rowTvDate"
+        android:text="Apple, milk, pen, hairoil"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/rowTvCreatedBy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/rowTvCommodity"
+        android:layout_below="@+id/rowTvCommodity"
+        android:layout_marginTop="16dp"
+        android:text="By Niteen" />
+
+    <TextView
+        android:id="@+id/rowTvPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/rowTvCreatedBy"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="32dp"
+        android:text="Rs. 230/-"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

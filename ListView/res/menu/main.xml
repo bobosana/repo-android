@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.listview.MainActivity" >
+
+        <item android:id="@+id/action_all_orders" android:orderInCategory="100" android:title="List Orders" app:showAsAction="never" /><item 
+        android:id="@+id/action_today_orders" 
+        android:orderInCategory="101" 
+        android:title="Todays Order"/>
+        <item android:id="@+id/action_welcome" android:title="Change name" android:orderInCategory="103"></item>
+
+</menu>

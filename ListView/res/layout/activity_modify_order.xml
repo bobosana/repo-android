@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+     >
+
+     <TextView
+        android:id="@+id/tvId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible" />
+     
+    <TextView
+        android:id="@+id/tvModifyTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:text="Edit order"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/etEditPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etEditCommodity"
+        android:layout_below="@+id/etEditCommodity"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:hint="Enter price"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/bUpdateOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etEditPrice"
+        android:layout_centerHorizontal="true"
+        android:text="Update"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+        android:id="@+id/tvCreatedByAndDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvModifyTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="By Niteen on 2015-01-01 12:13:13" />
+
+    <EditText
+        android:id="@+id/etEditCommodity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvCreatedByAndDate"
+        android:layout_below="@+id/tvCreatedByAndDate"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:hint="Enter commodities" />
+
+    <Button
+        android:id="@+id/bCancel"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/bDelete"
+        android:layout_toRightOf="@+id/bUpdateOrder"
+        android:text="Cancel" />
+
+    <Button
+        android:id="@+id/bDelete"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/bUpdateOrder"
+        android:layout_alignBottom="@+id/bUpdateOrder"
+        android:layout_toLeftOf="@+id/bUpdateOrder"
+        android:text="Delete"
+        />
+
+</RelativeLayout>
