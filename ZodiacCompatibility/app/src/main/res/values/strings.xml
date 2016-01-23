@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Zodiac Compatibility</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title">Find your love compatibility</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="find">Find</string>
+
+    <string-array name="zodiac_array">
+        <item>Aries</item>
+        <item>Taurus</item>
+        <item>Gemini</item>
+        <item>Cancer</item>
+        <item>Leo</item>
+        <item>Virgo</item>
+        <item>Libra</item>
+        <item>Scorpio</item>
+        <item>Sagittarius</item>
+        <item>Capricorn</item>
+        <item>Aquarius</item>
+        <item>Pisces</item>
+    </string-array>
+
+</resources>
