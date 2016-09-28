@@ -1,6 +1,7 @@
 package zodiaccompatibility.naorembinary.com.zodiaccompatibility;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -56,7 +57,9 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.action_find_zodiac) {
+            Intent intent=new Intent(this,FindZodiac.class);
+            startActivity(intent);
             return true;
         }
 

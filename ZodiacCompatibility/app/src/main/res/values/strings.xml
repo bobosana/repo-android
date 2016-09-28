@@ -2,11 +2,12 @@
     <string name="app_name">Zodiac Compatibility</string>
 
     <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
+    <string name="action_find_zodiac">Find Zodiac</string>
     <string name="title">Find your love compatibility</string>
     <string name="male">Male</string>
     <string name="female">Female</string>
     <string name="find">Find</string>
+    <string name="find_title">Find Zodiac by date of birth</string>
 
     <string-array name="zodiac_array">
         <item>Aries</item>
@@ -22,5 +23,6 @@
         <item>Aquarius</item>
         <item>Pisces</item>
     </string-array>
+    <string name="title_activity_find_zodiac">Find Zodiac</string>
 
 </resources>
