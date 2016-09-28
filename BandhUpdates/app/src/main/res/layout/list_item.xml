@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/colorBackground"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <com.facebook.login.widget.ProfilePictureView
+            android:id="@+id/ppvFbProfilePic"
+            android:layout_width="@dimen/com_facebook_profilepictureview_preset_size_small"
+            android:layout_height="@dimen/com_facebook_profilepictureview_preset_size_small"
+            android:layout_marginLeft="10px"
+            android:layout_alignTop="@+id/tvFbName"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+        </com.facebook.login.widget.ProfilePictureView>
+
+        <TextView
+            android:text="Golmei Chingkheinganba Naorem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/ppvFbProfilePic"
+            android:layout_toEndOf="@+id/ppvFbProfilePic"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="17dp"
+            android:id="@+id/tvFbName"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryText"/>
+
+        <TextView
+            android:text="5:30 pm, 18 September 2016"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvFbName"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/tvPosted"
+            android:id="@+id/tvUpdateTime"
+            android:textColor="@color/colorPrimaryText"
+            />
+
+        <TextView
+            android:text="Posted at"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvPosted"
+            android:layout_alignBaseline="@+id/tvUpdateTime"
+            android:layout_alignBottom="@+id/tvUpdateTime"
+            android:layout_alignLeft="@+id/tvFbName"
+            android:layout_alignStart="@+id/tvFbName"
+            android:textColor="@color/colorPrimaryText"/>
+            </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvListOrganizer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10px"
+        android:text="KCP"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryText"
+        tools:targetApi="lollipop" />
+
+    <TextView
+        android:id="@+id/tvListDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10px"
+        android:text="Indefinite bandh til KCP is insured sum of Rs 1 crore."
+        android:textColor="@color/colorPrimaryText" />
+    <TextView
+        android:id="@+id/tvListDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10px"
+        android:text="21 June 2015"
+        android:textColor="@color/colorSecondaryText"
+        />
+
+    <TextView
+        android:id="@+id/tvListDuration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10px"
+        android:text="12 hrs"
+        android:textColor="@color/colorSecondaryText"
+ />
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_bandh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.dylanonfb.android.bandhupdates.AddBandh">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/etOrganizer"
+        android:hint="Organizer"
+        android:maxLength="200"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:layout_below="@+id/etOrganizer"
+        android:layout_alignRight="@+id/etOrganizer"
+        android:layout_alignEnd="@+id/etOrganizer"
+        android:id="@+id/mtDescription"
+        android:maxLength="500"
+        android:hint="Details" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/etDate"
+        android:layout_below="@+id/mtDescription"
+        android:layout_alignLeft="@+id/mtDescription"
+        android:layout_alignStart="@+id/mtDescription"
+        android:maxLength="10"
+        android:hint="Date" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/etDate"
+        android:layout_alignRight="@+id/etDate"
+        android:layout_alignEnd="@+id/etDate"
+        android:id="@+id/etDuration"
+        android:maxLength="50"
+        android:hint="Duration (12 hrs, 48 hrs etc)" />
+
+    <Button
+        android:text="Add"
+        android:layout_width="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btAddBandh"
+        android:background="@drawable/custom_button"
+        android:layout_below="@+id/etDuration"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="59dp"
+        />
+
+
+</RelativeLayout>

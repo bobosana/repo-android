@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.dylanonfb.android.bandhupdates.MainActivity">
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+        >
+        <include layout="@layout/content_main"/>
+    </android.support.v4.widget.NestedScrollView>
+
+    <android.support.design.widget.AppBarLayout
+        android:translationZ="4px"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        >
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            android:translationZ="5px"
+            app:layout_scrollFlags="scroll|enterAlways"
+            />
+        <RelativeLayout
+            android:translationZ="3px"
+            android:id="@+id/rlFacebook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:backgroundTint="@color/colorPrimary"
+            android:background="@color/colorPrimary"
+            app:theme="@style/CustomTheme"
+
+            >
+            <com.facebook.login.widget.ProfilePictureView
+                android:id="@+id/ppvUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                ></com.facebook.login.widget.ProfilePictureView>
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_toRightOf="@id/ppvUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:text="@string/list_title"
+                android:textAlignment="center"
+                android:textColor="@color/colorIcons"
+                android:textSize="25sp"
+                android:textStyle="normal|bold" />
+
+            <com.facebook.login.widget.LoginButton
+                android:id="@+id/lbFacebook"
+                android:background="@drawable/custom_button"
+                android:drawableTint="@color/colorAccent"
+                android:backgroundTint="@color/colorIcons"
+                android:textColor="@color/colorSecondaryText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/ppvUser"
+                android:layout_toEndOf="@+id/ppvUser"
+                android:layout_marginLeft="25dp"
+                android:layout_marginStart="25dp"
+                android:elevation="1dp"
+                android:drawableLeft="@drawable/com_facebook_button_icon_white"
+                />
+        </RelativeLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@drawable/plus"
+        app:backgroundTint="@color/colorAccent" />
+
+</android.support.design.widget.CoordinatorLayout>
